@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ran Jiang - Creative designer and developer with a passion for crafting beautiful, functional experiences.">
+    <title>Ran Jiang - Personal Website</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card-hover {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .social-icon {
+            transition: opacity 0.2s ease-in-out;
+        }
+        .social-icon:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased min-h-screen flex flex-col">
+    <main class="flex-1 flex flex-col items-center justify-center px-6 py-12 md:py-20">
+        <div class="max-w-4xl w-full text-center">
+            <!-- Profile Picture -->
+            <div class="mb-6 flex justify-center">
+                <div class="w-32 h-32 rounded-full overflow-hidden bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                    <span class="text-4xl font-semibold text-gray-600">RJ</span>
+                    <!-- Replace the above div with an img tag when you have your photo:
+                    <img src="your-photo.jpg" alt="Ran Jiang" class="w-full h-full object-cover">
+                    -->
+                </div>
+            </div>
+
+            <!-- Name -->
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Ran Jiang
+            </h1>
+
+            <!-- Bio -->
+            <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Creative designer and developer with a passion for crafting beautiful, functional experiences. I explore the intersection of design and technology, sharing my thoughts and projects along the way.
+            </p>
+
+            <!-- Three Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-3xl mx-auto">
+                <!-- Design Card -->
+                <div class="card-hover bg-white border border-gray-200 rounded-xl p-6 cursor-pointer shadow-sm">
+                    <div class="mb-4 flex justify-center">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L13.09 8.26L19 9L13.09 9.74L12 16L10.91 9.74L5 9L10.91 8.26L12 2Z" fill="#FCD34D"/>
+                            <path d="M12 2L13.09 8.26L19 9L13.09 9.74L12 16L10.91 9.74L5 9L10.91 8.26L12 2Z" fill="#FCD34D" transform="rotate(45 12 12)"/>
+                            <circle cx="8" cy="6" r="1.5" fill="#FCD34D"/>
+                            <circle cx="16" cy="6" r="1.5" fill="#FCD34D"/>
+                            <circle cx="8" cy="18" r="1.5" fill="#FCD34D"/>
+                            <circle cx="16" cy="18" r="1.5" fill="#FCD34D"/>
+                        </svg>
+                </div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Design</h2>
+                    <p class="text-sm text-gray-600">Visual & Product Design</p>
+                </div>
+
+                <!-- Thoughts Card -->
+                <div class="card-hover bg-white border border-gray-200 rounded-xl p-6 cursor-pointer shadow-sm">
+                    <div class="mb-4 flex justify-center">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="#9CA3AF"/>
+                            <path d="M8 9C8 8.44772 8.44772 8 9 8H15C15.5523 8 16 8.44772 16 9V15C16 15.5523 15.5523 16 15 16H9C8.44772 16 8 15.5523 8 15V9Z" fill="white"/>
+                            <circle cx="10" cy="11" r="1" fill="#9CA3AF"/>
+                            <circle cx="14" cy="11" r="1" fill="#9CA3AF"/>
+                            <path d="M10 13C10 13.5523 10.4477 14 11 14H13C13.5523 14 14 13.5523 14 13" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+            </div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Thoughts</h2>
+                    <p class="text-sm text-gray-600">Essays & Reflections</p>
+                </div>
+
+                <!-- Projects Card -->
+                <div class="card-hover bg-white border border-gray-200 rounded-xl p-6 cursor-pointer shadow-sm">
+                    <div class="mb-4 flex justify-center">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#EF4444"/>
+                            <path d="M2 17L12 22L22 17" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M2 12L12 17L22 12" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M12 2L12 12" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                </div>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Projects</h2>
+                    <p class="text-sm text-gray-600">Selected Work</p>
+                </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex justify-center items-center gap-8">
+                <!-- Twitter -->
+                <a href="https://twitter.com/ranjiang" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gray-400">
+                        <path d="M23 3C22.0424 3.67548 20.9821 4.19211 19.86 4.53C19.2577 3.83751 18.4573 3.34669 17.567 3.12393C16.6767 2.90117 15.7395 2.95718 14.8821 3.28446C14.0247 3.61174 13.2884 4.1944 12.773 4.95372C12.2575 5.71303 11.9877 6.61234 12 7.53V8.53C10.2426 8.57557 8.50127 8.18581 6.93101 7.39545C5.36074 6.60508 4.01032 5.43864 3 4C3 4 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.5C20.9991 7.22145 20.9723 6.94359 20.92 6.67C21.9406 5.66349 22.6608 4.39271 23 3V3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </a>
+
+                <!-- Portfolio/Personal Site -->
+                <a href="https://ranjiang.github.io" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gray-400">
+                        <circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M5.5 21V19C5.5 16.5147 7.51472 14.5 10 14.5H14C16.4853 14.5 18.5 16.5147 18.5 19V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/ranjiang" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gray-400">
+                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M8 10V18M8 6V6.01M12 10V18M16 10V18M16 6V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:your.email@example.com" class="social-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-gray-400">
+                        <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M3 7L12 13L21 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
