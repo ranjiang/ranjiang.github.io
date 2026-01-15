@@ -13,18 +13,24 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        .card-hover {
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        .gallery-item {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        .gallery-item:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body class="bg-white text-gray-900 antialiased min-h-screen flex flex-col">
     <nav class="w-full border-b border-gray-100 py-6">
-        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
             <a href="index.html" class="text-xl font-semibold text-gray-900 hover:text-gray-600 transition-colors">
                 Ran Jiang
             </a>
@@ -35,61 +41,99 @@
     </nav>
 
     <main class="flex-1 px-6 py-12 md:py-20">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Design</h1>
-            <p class="text-lg text-gray-600 mb-12">Visual & Product Design</p>
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Design</h1>
+            <p class="text-lg text-gray-600 mb-10">Coming soon...</p>
 
-            <!-- Design Portfolio -->
-            <div class="space-y-12">
-                <!-- Design Work 1 - Placeholder -->
-                <div class="card-hover bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
-                    <div class="mb-6 bg-gray-100 rounded-lg h-64 flex items-center justify-center">
-                        <p class="text-gray-400">Design Image Placeholder</p>
+            <!-- Section 1: UI/UX Design -->
+            <section class="mb-24">
+                <h2 class="text-xl font-semibold text-gray-900 mb-6">Visual Design</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] cursor-pointer">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p class="text-gray-400">Image 1</p>
+                        </div>
+                        <!-- Replace with: <img src="assets/images/design/uiux-1.jpg" alt="UI/UX Design 1" class="gallery-image"> -->
                     </div>
-                    <h2 class="text-2xl font-semibold text-gray-900 mb-3">Design Project Title</h2>
-                    <p class="text-gray-600 mb-4">Design description goes here. Share your design process, inspiration, and the creative solutions you developed.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">UI/UX</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Product Design</span>
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] cursor-pointer">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p class="text-gray-400">Image 2</p>
+                        </div>
+                        <!-- Replace with: <img src="assets/images/design/uiux-2.jpg" alt="UI/UX Design 2" class="gallery-image"> -->
                     </div>
-                    <a href="#" class="text-gray-900 hover:text-gray-600 font-medium">View Design →</a>
-                </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] cursor-pointer">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p class="text-gray-400">Image 3</p>
+                        </div>
+                        <!-- Replace with: <img src="assets/images/design/uiux-3.jpg" alt="UI/UX Design 3" class="gallery-image"> -->
+                    </div>
+            </section>
 
-                <!-- Design Work 2 - Placeholder -->
-                <div class="card-hover bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
-                    <div class="mb-6 bg-gray-100 rounded-lg h-64 flex items-center justify-center">
-                        <p class="text-gray-400">Design Image Placeholder</p>
+            <!-- Section 2: Art -->
+            <section class="mb-24">
+                <h2 class="text-xl font-semibold text-gray-900 mb-6">Art</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] cursor-pointer">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p class="text-gray-400">Image 1</p>
+                        </div>
+                        <!-- Replace with: <img src="assets/images/design/product-1.jpg" alt="Product Design 1" class="gallery-image"> -->
                     </div>
-                    <h2 class="text-2xl font-semibold text-gray-900 mb-3">Design Project Title</h2>
-                    <p class="text-gray-600 mb-4">Design description goes here. Share your design process, inspiration, and the creative solutions you developed.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Visual Design</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Branding</span>
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] cursor-pointer">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p class="text-gray-400">Image 2</p>
+                        </div>
+                        <!-- Replace with: <img src="assets/images/design/product-2.jpg" alt="Product Design 2" class="gallery-image"> -->
                     </div>
-                    <a href="#" class="text-gray-900 hover:text-gray-600 font-medium">View Design →</a>
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] cursor-pointer">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p class="text-gray-400">Image 3</p>
+                        </div>
+                        <!-- Replace with: <img src="assets/images/design/product-3.jpg" alt="Product Design 3" class="gallery-image"> -->
+                    </div>
                 </div>
+            </section>
 
-                <!-- Design Work 3 - Placeholder -->
-                <div class="card-hover bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
-                    <div class="mb-6 bg-gray-100 rounded-lg h-64 flex items-center justify-center">
-                        <p class="text-gray-400">Design Image Placeholder</p>
+            <!-- Section 3: Photography -->
+            <section class="mb-24">
+                <h2 class="text-xl font-semibold text-gray-900 mb-6">Photography</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] cursor-pointer">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p class="text-gray-400">Image 1</p>
+                        </div>
+                        <!-- Replace with: <img src="assets/images/design/product-1.jpg" alt="Product Design 1" class="gallery-image"> -->
                     </div>
-                    <h2 class="text-2xl font-semibold text-gray-900 mb-3">Design Project Title</h2>
-                    <p class="text-gray-600 mb-4">Design description goes here. Share your design process, inspiration, and the creative solutions you developed.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">User Research</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Prototyping</span>
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] cursor-pointer">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p class="text-gray-400">Image 2</p>
+                        </div>
+                        <!-- Replace with: <img src="assets/images/design/product-2.jpg" alt="Product Design 2" class="gallery-image"> -->
                     </div>
-                    <a href="#" class="text-gray-900 hover:text-gray-600 font-medium">View Design →</a>
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item bg-gray-100 rounded-lg overflow-hidden aspect-[4/3] cursor-pointer">
+                        <div class="w-full h-full flex items-center justify-center">
+                            <p class="text-gray-400">Image 3</p>
+                        </div>
+                        <!-- Replace with: <img src="assets/images/design/product-3.jpg" alt="Product Design 3" class="gallery-image"> -->
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 
     <footer class="border-t border-gray-100 mt-20">
-        <div class="max-w-4xl mx-auto px-6 py-12">
+        <div class="max-w-6xl mx-auto px-6 py-12">
             <p class="text-gray-600 text-sm text-center">
-                © 2024 Ran Jiang. All rights reserved.
+                © 2026 Ran Jiang. All rights reserved.
             </p>
         </div>
     </footer>
