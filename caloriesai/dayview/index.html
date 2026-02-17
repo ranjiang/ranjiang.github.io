@@ -1,55 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CaloriesAI DayView - Daily calorie and nutrition view">
-    <title>DayView - CaloriesAI | Ran Jiang</title>
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CaloriesAI DayView - Ran Jiang</title>
+  <meta name="description" content="Your meals and daily log. Track calories with a photo—AI estimates nutrition and tells you about your food.">
+  <meta name="theme-color" content="#0d9488">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body class="bg-white text-gray-900 antialiased min-h-screen flex flex-col">
-    <nav class="w-full border-b border-gray-100 py-6">
-        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
-            <a href="https://ranjiang.github.io/" class="text-xl font-semibold text-gray-900 hover:text-gray-600 transition-colors">
-                Ran Jiang
-            </a>
-            <div class="flex gap-6">
-                <a href="https://ranjiang.github.io/caloriesai/" class="text-gray-600 hover:text-gray-900 transition-colors">CaloriesAI</a>
-                <a href="https://ranjiang.github.io/projects.html" class="text-gray-600 hover:text-gray-900 transition-colors">← Back to Projects</a>
-            </div>
-        </div>
-    </nav>
+<body class="min-h-screen bg-white">
+  <nav class="w-full border-b border-gray-100 py-6">
+    <div class="max-w-2xl mx-auto px-6 flex justify-between items-center">
+      <a href="https://ranjiang.github.io/" class="text-xl font-semibold text-gray-900 hover:text-gray-600 transition-colors">Ran Jiang</a>
+      <a href="https://ranjiang.github.io/projects.html" class="text-gray-600 hover:text-gray-900 transition-colors">← Back to Projects</a>
+    </div>
+  </nav>
 
-    <main class="flex-1 px-6 py-12 md:py-20">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">DayView</h1>
-            <p class="text-lg text-gray-600 mb-8">CaloriesAI DayView — your daily calorie and nutrition at a glance.</p>
+  <main class="min-h-screen bg-white">
+    <div class="max-w-2xl mx-auto px-6 py-12 pb-20">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">CaloriesAI</h1>
+        <p class="text-xl font-semibold text-teal-600 mb-4">DayView</p>
+        <p class="text-gray-600 text-base max-w-md mx-auto">
+          Your meals and daily log. Take a picture—AI estimates calories and nutrition and tells you about your food.
+        </p>
+      </div>
 
-            <div class="prose prose-gray max-w-none">
-                <p class="text-gray-600 mb-4">
-                    Add DayView content here.
-                </p>
-            </div>
+      <div class="space-y-12">
+        <h2 class="text-lg font-semibold text-gray-900 text-center">How it works</h2>
 
-            <div class="mt-8 flex gap-6">
-                <a href="https://ranjiang.github.io/caloriesai/" class="text-gray-900 hover:text-gray-600 font-medium">← CaloriesAI</a>
-                <a href="https://ranjiang.github.io/projects.html" class="text-gray-900 hover:text-gray-600 font-medium">← Back to Projects</a>
-            </div>
-        </div>
-    </main>
+        <section class="space-y-3">
+          <div class="relative aspect-[9/19] max-w-[280px] mx-auto rounded-2xl overflow-hidden border border-gray-200 shadow-lg bg-gray-100 flex items-center justify-center">
+            <p class="text-gray-400 text-sm text-center px-4">DayView · Header & date</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm font-medium text-gray-500 mb-1">Step 1</p>
+            <h3 class="text-lg font-semibold text-gray-900 mb-1">Your meals & daily log</h3>
+            <p class="text-gray-600 text-sm max-w-sm mx-auto">Pick a date, see your name, and export your day as a shareable image (vertical story, text only, or 2×2 collage).</p>
+          </div>
+        </section>
 
-    <footer class="border-t border-gray-100 mt-20">
-        <div class="max-w-4xl mx-auto px-6 py-12">
-            <p class="text-gray-600 text-sm text-center">
-                © 2026 Ran Jiang. All rights reserved.
-            </p>
-        </div>
-    </footer>
+        <section class="space-y-3">
+          <div class="relative aspect-[9/19] max-w-[280px] mx-auto rounded-2xl overflow-hidden border border-gray-200 shadow-lg bg-gray-100 flex items-center justify-center">
+            <p class="text-gray-400 text-sm text-center px-4">Daily calories progress</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm font-medium text-gray-500 mb-1">Step 2</p>
+            <h3 class="text-lg font-semibold text-gray-900 mb-1">Daily calories at a glance</h3>
+            <p class="text-gray-600 text-sm max-w-sm mx-auto">Total calories vs goal with a progress bar, plus protein (P), carbs (C), and fat (F) for the day.</p>
+          </div>
+        </section>
+
+        <section class="space-y-3">
+          <div class="relative aspect-[9/19] max-w-[280px] mx-auto rounded-2xl overflow-hidden border border-gray-200 shadow-lg bg-gray-100 flex items-center justify-center">
+            <p class="text-gray-400 text-sm text-center px-4">Meals list</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm font-medium text-gray-500 mb-1">Step 3</p>
+            <h3 class="text-lg font-semibold text-gray-900 mb-1">Meals list</h3>
+            <p class="text-gray-600 text-sm max-w-sm mx-auto">Each meal shows a photo, meal type, time, calories (with under/over/neutral color), nutrition summary, and a short story snippet. Tap for full detail.</p>
+          </div>
+        </section>
+
+        <section class="space-y-3">
+          <div class="relative aspect-[9/19] max-w-[280px] mx-auto rounded-2xl overflow-hidden border border-gray-200 shadow-lg bg-gray-100 flex items-center justify-center">
+            <p class="text-gray-400 text-sm text-center px-4">Take or choose photo</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm font-medium text-gray-500 mb-1">Step 4</p>
+            <h3 class="text-lg font-semibold text-gray-900 mb-1">Add a meal with a photo</h3>
+            <p class="text-gray-600 text-sm max-w-sm mx-auto">Simply take a picture or choose one from your library. AI will estimate calories and tell you about your food. Or add a meal manually without a photo.</p>
+          </div>
+        </section>
+
+        <section class="space-y-3">
+          <div class="relative aspect-[9/19] max-w-[280px] mx-auto rounded-2xl overflow-hidden border border-gray-200 shadow-lg bg-gray-100 flex items-center justify-center">
+            <p class="text-gray-400 text-sm text-center px-4">Meal type & portion</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm font-medium text-gray-500 mb-1">Step 5</p>
+            <h3 class="text-lg font-semibold text-gray-900 mb-1">Meal type and options</h3>
+            <p class="text-gray-600 text-sm max-w-sm mx-auto">Pick breakfast, lunch, dinner, or snack. Optionally set cooking style and portion size to improve the estimate.</p>
+          </div>
+        </section>
+
+        <section class="space-y-3">
+          <div class="relative aspect-[9/19] max-w-[280px] mx-auto rounded-2xl overflow-hidden border border-gray-200 shadow-lg bg-gray-100 flex items-center justify-center">
+            <p class="text-gray-400 text-sm text-center px-4">Optional note</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm font-medium text-gray-500 mb-1">Step 6</p>
+            <h3 class="text-lg font-semibold text-gray-900 mb-1">Add a note (optional)</h3>
+            <p class="text-gray-600 text-sm max-w-sm mx-auto">Size, cooking style, ingredients—anything that helps estimate calories and nutrition. Then tap “Analyze meal.”</p>
+          </div>
+        </section>
+
+        <section class="space-y-3">
+          <div class="relative aspect-[9/19] max-w-[280px] mx-auto rounded-2xl overflow-hidden border border-gray-200 shadow-lg bg-gray-100 flex items-center justify-center">
+            <p class="text-gray-400 text-sm text-center px-4">AI result</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm font-medium text-gray-500 mb-1">Step 7</p>
+            <h3 class="text-lg font-semibold text-gray-900 mb-1">AI result</h3>
+            <p class="text-gray-600 text-sm max-w-sm mx-auto">See estimated calories, nutrition (protein, carbs, fat, fiber, sugar), “About this meal” story with citation, recommended reads or podcasts, and detected food items. Save to your log.</p>
+          </div>
+        </section>
+
+        <section class="space-y-3">
+          <div class="relative aspect-[9/19] max-w-[280px] mx-auto rounded-2xl overflow-hidden border border-gray-200 shadow-lg bg-gray-100 flex items-center justify-center">
+            <p class="text-gray-400 text-sm text-center px-4">Export day</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm font-medium text-gray-500 mb-1">Step 8</p>
+            <h3 class="text-lg font-semibold text-gray-900 mb-1">Share your day</h3>
+            <p class="text-gray-600 text-sm max-w-sm mx-auto">Export today as an image: vertical story (header + each meal with photo), text only, or 2×2 collage. Share to Instagram or anywhere you like.</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="mt-16 text-center">
+        <p class="text-teal-600 font-semibold text-lg">CaloriesAI</p>
+        <p class="text-gray-500 text-sm mt-1">Track meals with a photo. AI does the rest.</p>
+        <a href="https://ranjiang.github.io/projects.html" class="inline-block mt-4 text-gray-900 hover:text-gray-600 font-medium">← Back to Projects</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-gray-100 mt-20">
+    <div class="max-w-2xl mx-auto px-6 py-12">
+      <p class="text-gray-600 text-sm text-center">© 2026 Ran Jiang. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
